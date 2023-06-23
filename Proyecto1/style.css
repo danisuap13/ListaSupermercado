@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: 'Arial';
+    }
+#encabezado{
+    background: wheat;
+    display: flex;   
+    justify-content: center;
+    padding: 20px;
+}
+
+.listaSuper{
+    display: flex;
+    flex-direction: column;
+}
+.listaSuper .descripcion{
+    background: grey;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+}
+.listaSuper .productos{
+    background:papayawhip;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+}

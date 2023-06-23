@@ -1,32 +1,29 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=7">
-    <title>Lista de Compras</title>
+    
+    <title>Document</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Lista de Compras del supermercado</h1>
-    <div id="lista">
-        <p>Ingrese el nombre del producto
-            <input type="text" id="item" placeholder="Bolsas Plasticas">
-        </p>
-        <p>Ingrese el precio por unidad
-            <input type="number" id="precio" placeholder="2000">
-        </p>
-        <p>Ingrese la cantidad
-            <input type="number" id="cantidad" placeholder="2">
-        </p>
-        <button id="ingresar">Ingresar</button>
-    </div>  
-    <div>
-        <h1>Lista :</h1>
-        <p id="show">
-            
-        </p>
+    <header id="encabezado">
+        <strong>LISTA DEL SUPERMERCADO</strong>
+    </header> 
+    <div class="listaSuper">
+       <div class="descripcion">
+            <h2>Producto</h2>
+            <h2>Precio</h2>
+            <h2>Cantidad</h2>
+       </div>
+       <div class="productos">
+            <input type="text" class="productoItem">
+            <input type="number">
+            <input type="number">
+        </div>  
     </div>
-
+    <input type="button" value="submit" class="submit">
     <script src="./script.js"></script>
 </body>
 </html>
