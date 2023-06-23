@@ -20,7 +20,14 @@ body {
     grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-template-rows: 1fr;
 }
-.listaSuper .productos{
+.listaSuper .inputs {
+    background:papayawhip;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+}
+.listaSuper .productos {
     background:papayawhip;
     display: grid;
     justify-items: center;
