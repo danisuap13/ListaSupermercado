@@ -1,3 +1,6 @@
+html{
+    background: papayawhip;
+}
 body {
     margin: 0;
     font-family: 'Arial';
@@ -33,4 +36,20 @@ body {
     justify-items: center;
     grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-template-rows: 1fr;
+}
+
+.enviar{
+    display: inline;
+    background: green;
+    margin: 0;
+    border-radius: 20px;
+    border: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.total{
+
+    background-color: blue;   
+    background-color: inherit;   
 }
