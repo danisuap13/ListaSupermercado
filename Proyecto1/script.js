@@ -14,16 +14,22 @@ let multiplicacion=0;
 let subtotal=[];
 
 function escucharProducto(){
-    const producto = document.querySelector('#productoItem');
-    const precio = document.querySelector('#productoPrecio');
-    const cantidad = document.querySelector('#productoCantidad');
-    lista.push({
-        producto: producto.value,
-        precio: precio.value,
-        cantidad: cantidad.value,
-    });
-    añadirProductoLista();
-    totalListaSuper();
+    const product = document.querySelector('#productoItem');
+    const price = document.querySelector('#productoPrecio');
+    const quantity = document.querySelector('#productoCantidad');
+    if (price.value >0 && quantity.value >0 && product.value != ""){
+        console.log(price.value);
+        lista.push({
+            producto: product.value,
+            precio: price.value,
+            cantidad: quantity.value,
+        });
+        añadirProductoLista();
+        totalListaSuper();
+    }
+    else{
+        alert("No ha ingresado cantidad, precio o producto")
+    }
 }
 
 function añadirProductoLista(){
